@@ -1,0 +1,126 @@
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: #343A40;
+    color: #343A40;
+}
+
+
+#display{
+    width: 85%;
+    background-color: #E1E8EB;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Editing style of area with buttons and buttons */
+
+nav{
+    background-color: #E1E8EB;
+
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #343A40;
+}
+
+nav > h1{
+    font-weight: 500;
+    font-size: 30pt;
+
+    margin: 0;
+    
+    margin-top: 25px;
+}
+
+nav > h2{
+    font-weight: 400;
+    font-size: 20pt;
+
+    margin-top: 30px;
+}
+
+
+/* Editing style of area with books and books */
+
+#booksArea{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+    gap: 25px;
+
+    margin-top: 20px;
+
+    padding-bottom: 40px;
+
+}
+
+.book{
+    background-color: #FFC107;
+    
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+
+    font-size: 20pt;
+
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+
+    box-shadow: 8px 8px 12px 0px #343A40;
+}
+
+.book > h2{
+    font-weight: 500;
+    font-size: 30pt;
+
+    align-self: center;
+    text-align: center;
+
+    width: 80%;
+
+    padding-bottom: 5px;
+    border-bottom: 2px solid #343A40;
+}
+
+.book > p{
+    margin-left: 15px;
+}
+
+#bookMain{
+    background-color: #7952B3;
+    color: #E1E8EB;
+}
+
+#bookMain > h2{
+    border-bottom: 2px solid #E1E8EB;
+}
+
+/* Just so text stays on the sticky note */
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+    #booksArea{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    #booksArea{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Made with love and hate by winter#7704 ❤❤❤ */
